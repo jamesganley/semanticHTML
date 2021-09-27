@@ -1,0 +1,35 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fira+Sans+Extra+Condensed:wght@100&family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100&family=Roboto:wght@300&family=Sail&display=swap');
+
+
+
+#backImg {
+    background-image: url("images/backG.jpeg");
+}
+
+#nav{
+    font-family: 'Ephesis', cursive;
+}
+
+#gallery{
+    font-family: 'Amatic SC', cursive;
+}
+
+#findCruise{
+    font-family: 'Sail', cursive;
+}
+
+#galleryLabel{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+#title{
+    font-family: 'Abril Fatface', cursive;
+}
+#text{
+    font-family: 'Roboto', sans-serif;
+}
