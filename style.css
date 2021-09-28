@@ -8,29 +8,29 @@
 @import url('https://use.fontawesome.com/releases/v5.11.2/css/all.css');
 
 
-#backImg {
+.backImg {
     background-image: url("images/backG.jpeg");
 }
 
-#nav{
+.nav{
     font-family: 'Ephesis', cursive;
 }
 
-#gallery{
+.gallery{
     font-family: 'Amatic SC', cursive;
 }
 
-#findCruise{
+.findCruise{
     font-family: 'Sail', cursive;
 }
 
-#galleryLabel{
+.galleryLabel{
     font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
-#title{
+.title{
     font-family: 'Abril Fatface', cursive;
 }
-#text{
+.text{
     font-family: 'Roboto', sans-serif;
 }
 
