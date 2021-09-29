@@ -29,3 +29,44 @@
 .text{
     font-family: 'Roboto', sans-serif;
 }
+
+h2::after{
+
+}
+.jim{
+    position:relative;
+    height:500px;
+    width:500px;
+    text-align: center;
+    background-image: url("images/backG.jpeg");
+}
+.jim::first-letter{
+    color: #ff0000;
+    font-size: large;
+}
+.jim::first-line{
+    color: #0000ff;
+    font-variant: small-caps;
+}
+.jim::before {
+    content:'Title';
+    width:100px;
+    height:100px;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.1));
+    bottom: 2rem;
+    left:0;
+    position:absolute;
+}
+.jim::after {
+    content:'Subtitle';
+    width:100px;
+    height:100px;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.1));
+    bottom: 0;
+    left: 0;
+    position:absolute;
+}
+.jim::selection {
+    color: red;
+    background: yellow;
+}
