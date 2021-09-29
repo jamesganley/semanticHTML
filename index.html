@@ -6,10 +6,12 @@
     <title>Semantic</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+</head>
 <body>
     <main>
-        <div class="bg-cover bg-center overflow-hidden md:h-screen sm:h-max top-0 left-0 bg-fixed backImg">
+        <div class="active bg-cover bg-center overflow-hidden md:h-screen sm:h-max top-0 left-0 bg-fixed backImg">
 
 <!--        Start of Nav-->
         <nav class="flex justify-center nav">
@@ -95,7 +97,7 @@
             </div>
 
             <!--    down arrow-->
-            <div class="flex justify-center item-end h-full pt-24">
+            <div class="next flex justify-center item-end h-full pt-24">
                 <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
@@ -108,7 +110,7 @@
 
 
     <!--        start of mid comment section-->
-    <section class="px-3 md:px-5 lg:px-10 py-5 md:py-20 lg:py-40">
+    <section class="p p1 px-3 md:px-5 lg:px-10 py-5 md:py-20 lg:py-40">
             <div class="container p-1 py-10 rounded flex flex-wrap mx-auto justify-center items-center bg-gradient-to-r from-yellow-300 to-green-300">
                 <div class="p-3 sm:w-2/3 max-w-sm">
                     <figure>
@@ -295,11 +297,25 @@
     </main>
 
 
+
 <!--    footer-->
     <footer class="flex justify-center bg-gray-100">
        <p>Winner Winner, Chicken Dinner © James Ganley </p>
     </footer>
 <!--end of footer-->
+    <script>
+        $(".next").click(function() {
+            var $target = $('.p.active').next('.p');
+            if ($target.length == 0)
+                $target = $('.p:first');
 
+            $('html, body').animate({
+                scrollTop: $target.offset().top
+            }, 'slow');
+
+            $('.active').removeClass('active');
+            $target.addClass('active');
+        });
+    </script>
 </body>
 </html>
